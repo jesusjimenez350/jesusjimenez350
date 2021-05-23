@@ -211,6 +211,7 @@
               }
             }
           },
+<<<<<<< HEAD
           "EnterpriseLogAccessIamRole": {
             "Type": "AWS::IAM::Role",
             "Properties": {
@@ -281,6 +282,8 @@
               ]
             }
           },
+=======
+>>>>>>> 66b4c7fc3c27cd378c4eb68cd5bf8d90b9fb4b2e
           "CreateLambdaFunction": {
             "Type": "AWS::Lambda::Function",
             "Properties": {
@@ -288,9 +291,15 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
+<<<<<<< HEAD
                 "S3Key": "serverless/api-rest/dev/1621685153791-2021-05-22T12:05:53.791Z/api-rest.zip"
               },
               "Handler": "s_create.handler",
+=======
+                "S3Key": "serverless/api-rest/dev/1621638601747-2021-05-21T23:10:01.747Z/api-rest.zip"
+              },
+              "Handler": "todos/create.create",
+>>>>>>> 66b4c7fc3c27cd378c4eb68cd5bf8d90b9fb4b2e
               "Runtime": "python3.8",
               "FunctionName": "api-rest-dev-create",
               "MemorySize": 1024,
@@ -318,9 +327,15 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
+<<<<<<< HEAD
                 "S3Key": "serverless/api-rest/dev/1621685153791-2021-05-22T12:05:53.791Z/api-rest.zip"
               },
               "Handler": "s_list.handler",
+=======
+                "S3Key": "serverless/api-rest/dev/1621638601747-2021-05-21T23:10:01.747Z/api-rest.zip"
+              },
+              "Handler": "todos/list.list",
+>>>>>>> 66b4c7fc3c27cd378c4eb68cd5bf8d90b9fb4b2e
               "Runtime": "python3.8",
               "FunctionName": "api-rest-dev-list",
               "MemorySize": 1024,
@@ -348,9 +363,15 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
+<<<<<<< HEAD
                 "S3Key": "serverless/api-rest/dev/1621685153791-2021-05-22T12:05:53.791Z/api-rest.zip"
               },
               "Handler": "s_get.handler",
+=======
+                "S3Key": "serverless/api-rest/dev/1621638601747-2021-05-21T23:10:01.747Z/api-rest.zip"
+              },
+              "Handler": "todos/get.get",
+>>>>>>> 66b4c7fc3c27cd378c4eb68cd5bf8d90b9fb4b2e
               "Runtime": "python3.8",
               "FunctionName": "api-rest-dev-get",
               "MemorySize": 1024,
@@ -378,9 +399,15 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
+<<<<<<< HEAD
                 "S3Key": "serverless/api-rest/dev/1621685153791-2021-05-22T12:05:53.791Z/api-rest.zip"
               },
               "Handler": "s_update.handler",
+=======
+                "S3Key": "serverless/api-rest/dev/1621638601747-2021-05-21T23:10:01.747Z/api-rest.zip"
+              },
+              "Handler": "todos/update.update",
+>>>>>>> 66b4c7fc3c27cd378c4eb68cd5bf8d90b9fb4b2e
               "Runtime": "python3.8",
               "FunctionName": "api-rest-dev-update",
               "MemorySize": 1024,
@@ -408,9 +435,15 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
+<<<<<<< HEAD
                 "S3Key": "serverless/api-rest/dev/1621685153791-2021-05-22T12:05:53.791Z/api-rest.zip"
               },
               "Handler": "s_delete.handler",
+=======
+                "S3Key": "serverless/api-rest/dev/1621638601747-2021-05-21T23:10:01.747Z/api-rest.zip"
+              },
+              "Handler": "todos/delete.delete",
+>>>>>>> 66b4c7fc3c27cd378c4eb68cd5bf8d90b9fb4b2e
               "Runtime": "python3.8",
               "FunctionName": "api-rest-dev-delete",
               "MemorySize": 1024,
@@ -431,54 +464,100 @@
               "DeleteLogGroup"
             ]
           },
+<<<<<<< HEAD
           "ListLambdaVersioni6dVEV1TXSoYtSDdbL36ogiOFMmbqcO4Olaw9XOjFc": {
+=======
+          "CreateLambdaVersionhZ6F8DpHwiBD68IgcLFZFvE2dG2BLoGPCA6yTOegx8": {
+>>>>>>> 66b4c7fc3c27cd378c4eb68cd5bf8d90b9fb4b2e
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
+<<<<<<< HEAD
                 "Ref": "ListLambdaFunction"
               },
               "CodeSha256": "MuCHYXNJhlopqvayglUC/LzpJaSa+VfUpiWeOW0yrcM="
             }
           },
           "GetLambdaVersionjZOYKyIY1157GjVCAQIpSZbWBHVAzrSumyd1ygplU5M": {
+=======
+                "Ref": "CreateLambdaFunction"
+              },
+              "CodeSha256": "8q81pogs0+o/kz1Cpv6Axhw3M0B5tgUomLviWrUs+Cw="
+            }
+          },
+          "ListLambdaVersionxlytEe5GOTQvudJrVOgpM08q8lLi10nhyI3F3rBwI": {
+>>>>>>> 66b4c7fc3c27cd378c4eb68cd5bf8d90b9fb4b2e
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
+<<<<<<< HEAD
                 "Ref": "GetLambdaFunction"
               },
               "CodeSha256": "MuCHYXNJhlopqvayglUC/LzpJaSa+VfUpiWeOW0yrcM="
             }
           },
           "UpdateLambdaVersionkLdHEg9GtlzT063MiZvUS3qxyQh1z2lF6jmCIUAWrT8": {
+=======
+                "Ref": "ListLambdaFunction"
+              },
+              "CodeSha256": "8q81pogs0+o/kz1Cpv6Axhw3M0B5tgUomLviWrUs+Cw="
+            }
+          },
+          "GetLambdaVersiontoPADYmFGkV1hCLe2bTQdXxbmaFhpGFGEAuVrjDWpc": {
+>>>>>>> 66b4c7fc3c27cd378c4eb68cd5bf8d90b9fb4b2e
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
+<<<<<<< HEAD
                 "Ref": "UpdateLambdaFunction"
               },
               "CodeSha256": "MuCHYXNJhlopqvayglUC/LzpJaSa+VfUpiWeOW0yrcM="
             }
           },
           "DeleteLambdaVersionFN9uPeUas0tNz2h5y1oVZzZCwMBMojsCjEIY": {
+=======
+                "Ref": "GetLambdaFunction"
+              },
+              "CodeSha256": "8q81pogs0+o/kz1Cpv6Axhw3M0B5tgUomLviWrUs+Cw="
+            }
+          },
+          "UpdateLambdaVersionL2wCgW7ifTNebweMi1BhZrIim95vFpq9B9ZTIWDRI": {
+>>>>>>> 66b4c7fc3c27cd378c4eb68cd5bf8d90b9fb4b2e
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
+<<<<<<< HEAD
                 "Ref": "DeleteLambdaFunction"
               },
               "CodeSha256": "MuCHYXNJhlopqvayglUC/LzpJaSa+VfUpiWeOW0yrcM="
             }
           },
           "CreateLambdaVersionhJJUlqJ1Oa85DcmeCPAkpklZl1o00PqPMchFP1GBU": {
+=======
+                "Ref": "UpdateLambdaFunction"
+              },
+              "CodeSha256": "8q81pogs0+o/kz1Cpv6Axhw3M0B5tgUomLviWrUs+Cw="
+            }
+          },
+          "DeleteLambdaVersiondlIGghRthxb8QypqvrpdMTzo7VBixRo9yXNnTn0ptL4": {
+>>>>>>> 66b4c7fc3c27cd378c4eb68cd5bf8d90b9fb4b2e
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
+<<<<<<< HEAD
                 "Ref": "CreateLambdaFunction"
               },
               "CodeSha256": "MuCHYXNJhlopqvayglUC/LzpJaSa+VfUpiWeOW0yrcM="
+=======
+                "Ref": "DeleteLambdaFunction"
+              },
+              "CodeSha256": "8q81pogs0+o/kz1Cpv6Axhw3M0B5tgUomLviWrUs+Cw="
+>>>>>>> 66b4c7fc3c27cd378c4eb68cd5bf8d90b9fb4b2e
             }
           },
           "ApiGatewayRestApi": {
@@ -825,7 +904,11 @@
               "MethodResponses": []
             }
           },
+<<<<<<< HEAD
           "ApiGatewayDeployment1621685148447": {
+=======
+          "ApiGatewayDeployment1621638598233": {
+>>>>>>> 66b4c7fc3c27cd378c4eb68cd5bf8d90b9fb4b2e
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -1028,6 +1111,7 @@
               }
             }
           },
+<<<<<<< HEAD
           "ApiGatewayLogGroup": {
             "Type": "AWS::Logs::LogGroup",
             "Properties": {
@@ -1155,6 +1239,8 @@
               "IamRoleCustomResourcesLambdaExecution"
             ]
           },
+=======
+>>>>>>> 66b4c7fc3c27cd378c4eb68cd5bf8d90b9fb4b2e
           "TodosDynamoDbTable": {
             "Type": "AWS::DynamoDB::Table",
             "DeletionPolicy": "Retain",
@@ -1177,6 +1263,7 @@
               },
               "TableName": "api-rest-dev"
             }
+<<<<<<< HEAD
           },
           "CloudWatchLogsSubscriptionFilterCreateLogGroup": {
             "Type": "AWS::Logs::SubscriptionFilter",
@@ -1237,6 +1324,8 @@
                 "Ref": "ApiGatewayLogGroup"
               }
             }
+=======
+>>>>>>> 66b4c7fc3c27cd378c4eb68cd5bf8d90b9fb4b2e
           }
         },
         "Outputs": {
@@ -1248,6 +1337,7 @@
               "Name": "sls-api-rest-dev-ServerlessDeploymentBucketName"
             }
           },
+<<<<<<< HEAD
           "EnterpriseLogAccessIamRole": {
             "Value": {
               "Fn::GetAtt": [
@@ -1257,12 +1347,25 @@
             },
             "Export": {
               "Name": "sls-api-rest-dev-EnterpriseLogAccessIamRole"
+=======
+          "CreateLambdaFunctionQualifiedArn": {
+            "Description": "Current Lambda function version",
+            "Value": {
+              "Ref": "CreateLambdaVersionhZ6F8DpHwiBD68IgcLFZFvE2dG2BLoGPCA6yTOegx8"
+            },
+            "Export": {
+              "Name": "sls-api-rest-dev-CreateLambdaFunctionQualifiedArn"
+>>>>>>> 66b4c7fc3c27cd378c4eb68cd5bf8d90b9fb4b2e
             }
           },
           "ListLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
+<<<<<<< HEAD
               "Ref": "ListLambdaVersioni6dVEV1TXSoYtSDdbL36ogiOFMmbqcO4Olaw9XOjFc"
+=======
+              "Ref": "ListLambdaVersionxlytEe5GOTQvudJrVOgpM08q8lLi10nhyI3F3rBwI"
+>>>>>>> 66b4c7fc3c27cd378c4eb68cd5bf8d90b9fb4b2e
             },
             "Export": {
               "Name": "sls-api-rest-dev-ListLambdaFunctionQualifiedArn"
@@ -1271,7 +1374,11 @@
           "GetLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
+<<<<<<< HEAD
               "Ref": "GetLambdaVersionjZOYKyIY1157GjVCAQIpSZbWBHVAzrSumyd1ygplU5M"
+=======
+              "Ref": "GetLambdaVersiontoPADYmFGkV1hCLe2bTQdXxbmaFhpGFGEAuVrjDWpc"
+>>>>>>> 66b4c7fc3c27cd378c4eb68cd5bf8d90b9fb4b2e
             },
             "Export": {
               "Name": "sls-api-rest-dev-GetLambdaFunctionQualifiedArn"
@@ -1280,7 +1387,11 @@
           "UpdateLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
+<<<<<<< HEAD
               "Ref": "UpdateLambdaVersionkLdHEg9GtlzT063MiZvUS3qxyQh1z2lF6jmCIUAWrT8"
+=======
+              "Ref": "UpdateLambdaVersionL2wCgW7ifTNebweMi1BhZrIim95vFpq9B9ZTIWDRI"
+>>>>>>> 66b4c7fc3c27cd378c4eb68cd5bf8d90b9fb4b2e
             },
             "Export": {
               "Name": "sls-api-rest-dev-UpdateLambdaFunctionQualifiedArn"
@@ -1289,12 +1400,17 @@
           "DeleteLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
+<<<<<<< HEAD
               "Ref": "DeleteLambdaVersionFN9uPeUas0tNz2h5y1oVZzZCwMBMojsCjEIY"
+=======
+              "Ref": "DeleteLambdaVersiondlIGghRthxb8QypqvrpdMTzo7VBixRo9yXNnTn0ptL4"
+>>>>>>> 66b4c7fc3c27cd378c4eb68cd5bf8d90b9fb4b2e
             },
             "Export": {
               "Name": "sls-api-rest-dev-DeleteLambdaFunctionQualifiedArn"
             }
           },
+<<<<<<< HEAD
           "CreateLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
@@ -1304,6 +1420,8 @@
               "Name": "sls-api-rest-dev-CreateLambdaFunctionQualifiedArn"
             }
           },
+=======
+>>>>>>> 66b4c7fc3c27cd378c4eb68cd5bf8d90b9fb4b2e
           "ServiceEndpoint": {
             "Description": "URL of the service endpoint",
             "Value": {
@@ -1414,17 +1532,24 @@
           }
         }
       },
+<<<<<<< HEAD
       "logs": {
         "restApi": {
           "format": "{\"requestTime\":\"$context.requestTime\",\"requestId\":\"$context.requestId\",\"apiId\":\"$context.apiId\",\"resourceId\":\"$context.resourceId\",\"resourcePath\":\"$context.resourcePath\",\"path\":\"$context.path\",\"httpMethod\":\"$context.httpMethod\",\"status\":\"$context.status\",\"authLatency\":\"$context.authorizer.integrationLatency\",\"integrationLatency\":\"$context.integrationLatency\",\"integrationStatus\":\"$context.integrationStatus\",\"responseLatency\":\"$context.responseLatency\",\"responseLength\":\"$context.responseLength\",\"errorMessage\":\"$context.error.message\",\"format\":\"SLS_ACCESS_LOG\",\"version\":\"1.0.0\"}"
         }
       },
+=======
+>>>>>>> 66b4c7fc3c27cd378c4eb68cd5bf8d90b9fb4b2e
       "vpc": {}
     },
     "pluginsData": {},
     "functions": {
       "create": {
+<<<<<<< HEAD
         "handler": "s_create.handler",
+=======
+        "handler": "todos/create.create",
+>>>>>>> 66b4c7fc3c27cd378c4eb68cd5bf8d90b9fb4b2e
         "events": [
           {
             "http": {
@@ -1459,10 +1584,17 @@
         "timeout": 6,
         "runtime": "python3.8",
         "vpc": {},
+<<<<<<< HEAD
         "versionLogicalId": "CreateLambdaVersionhJJUlqJ1Oa85DcmeCPAkpklZl1o00PqPMchFP1GBU"
       },
       "list": {
         "handler": "s_list.handler",
+=======
+        "versionLogicalId": "CreateLambdaVersionhZ6F8DpHwiBD68IgcLFZFvE2dG2BLoGPCA6yTOegx8"
+      },
+      "list": {
+        "handler": "todos/list.list",
+>>>>>>> 66b4c7fc3c27cd378c4eb68cd5bf8d90b9fb4b2e
         "events": [
           {
             "http": {
@@ -1497,10 +1629,17 @@
         "timeout": 6,
         "runtime": "python3.8",
         "vpc": {},
+<<<<<<< HEAD
         "versionLogicalId": "ListLambdaVersioni6dVEV1TXSoYtSDdbL36ogiOFMmbqcO4Olaw9XOjFc"
       },
       "get": {
         "handler": "s_get.handler",
+=======
+        "versionLogicalId": "ListLambdaVersionxlytEe5GOTQvudJrVOgpM08q8lLi10nhyI3F3rBwI"
+      },
+      "get": {
+        "handler": "todos/get.get",
+>>>>>>> 66b4c7fc3c27cd378c4eb68cd5bf8d90b9fb4b2e
         "events": [
           {
             "http": {
@@ -1535,10 +1674,17 @@
         "timeout": 6,
         "runtime": "python3.8",
         "vpc": {},
+<<<<<<< HEAD
         "versionLogicalId": "GetLambdaVersionjZOYKyIY1157GjVCAQIpSZbWBHVAzrSumyd1ygplU5M"
       },
       "update": {
         "handler": "s_update.handler",
+=======
+        "versionLogicalId": "GetLambdaVersiontoPADYmFGkV1hCLe2bTQdXxbmaFhpGFGEAuVrjDWpc"
+      },
+      "update": {
+        "handler": "todos/update.update",
+>>>>>>> 66b4c7fc3c27cd378c4eb68cd5bf8d90b9fb4b2e
         "events": [
           {
             "http": {
@@ -1573,10 +1719,17 @@
         "timeout": 6,
         "runtime": "python3.8",
         "vpc": {},
+<<<<<<< HEAD
         "versionLogicalId": "UpdateLambdaVersionkLdHEg9GtlzT063MiZvUS3qxyQh1z2lF6jmCIUAWrT8"
       },
       "delete": {
         "handler": "s_delete.handler",
+=======
+        "versionLogicalId": "UpdateLambdaVersionL2wCgW7ifTNebweMi1BhZrIim95vFpq9B9ZTIWDRI"
+      },
+      "delete": {
+        "handler": "todos/delete.delete",
+>>>>>>> 66b4c7fc3c27cd378c4eb68cd5bf8d90b9fb4b2e
         "events": [
           {
             "http": {
@@ -1611,7 +1764,11 @@
         "timeout": 6,
         "runtime": "python3.8",
         "vpc": {},
+<<<<<<< HEAD
         "versionLogicalId": "DeleteLambdaVersionFN9uPeUas0tNz2h5y1oVZzZCwMBMojsCjEIY"
+=======
+        "versionLogicalId": "DeleteLambdaVersiondlIGghRthxb8QypqvrpdMTzo7VBixRo9yXNnTn0ptL4"
+>>>>>>> 66b4c7fc3c27cd378c4eb68cd5bf8d90b9fb4b2e
       }
     },
     "resources": {
@@ -1645,10 +1802,15 @@
     "configValidationMode": "warn",
     "serviceFilename": "serverless.yml",
     "app": "todo-list-serverless",
+<<<<<<< HEAD
     "org": "jesusjimenez350",
     "layers": {},
     "initialServerlessConfig": {
       "org": "jesusjimenez350",
+=======
+    "layers": {},
+    "initialServerlessConfig": {
+>>>>>>> 66b4c7fc3c27cd378c4eb68cd5bf8d90b9fb4b2e
       "app": "todo-list-serverless",
       "service": {
         "$ref": "$[\"service\"][\"serviceObject\"]"
@@ -1664,6 +1826,7 @@
         "$ref": "$[\"service\"][\"resources\"]"
       }
     },
+<<<<<<< HEAD
     "isDashboardMonitoringPreconfigured": true,
     "isDashboardAppPreconfigured": true,
     "orgUid": "35b960b4-d86b-42eb-bef9-a86a46ba5925",
@@ -1672,6 +1835,13 @@
   },
   "package": {
     "artifactDirectoryName": "serverless/api-rest/dev/1621685153791-2021-05-22T12:05:53.791Z",
+=======
+    "isDashboardMonitoringPreconfigured": false,
+    "artifact": "/home/ec2-user/environment/todo-list-serverless/.serverless/api-rest.zip"
+  },
+  "package": {
+    "artifactDirectoryName": "serverless/api-rest/dev/1621638601747-2021-05-21T23:10:01.747Z",
+>>>>>>> 66b4c7fc3c27cd378c4eb68cd5bf8d90b9fb4b2e
     "artifact": "api-rest.zip"
   }
 }
