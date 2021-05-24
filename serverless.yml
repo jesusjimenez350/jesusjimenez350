@@ -25,6 +25,11 @@ provider:
         - cloudwatch:GetMetricStatistics
         - cloudwatch:ListMetrics
       Resource: "*"
+    - Effect: Allow
+      Action:
+        - comprehend:BatchDetectDominantLanguage
+        - comprehend:DetectDominantLanguage
+      Resource: "*"
 
 functions:
   create:
